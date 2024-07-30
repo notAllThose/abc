@@ -15,8 +15,17 @@ jobs:
 
     - name: Echo current directory
       run: |
-       cd ..
-        echo: pwd
+        cd ..
+        echo "Changed directory to root:"
+        pwd
+        echo "Root directory contents after cd ..:"
+        ls -la
+        cd scripts
+        echo "Changed directory to scripts:"
+        pwd
+        echo "Scripts directory contents:"
+        ls -la
+        python sort_openapi.py
 
     - name: Echo current directory
       run: |
