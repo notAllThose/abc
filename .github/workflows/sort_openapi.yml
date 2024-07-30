@@ -38,7 +38,7 @@ jobs:
 
     - name: Run sorting script
       run: |
-        python sortYaml.py
+        python ./sortYaml/sortYaml.py
 
     - name: Commit sorted YAML file
       run: |
