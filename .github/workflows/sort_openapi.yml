@@ -9,6 +9,9 @@ jobs:
   sort-yaml:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # Stellt sicher, dass der Token Schreibzugriff hat
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
