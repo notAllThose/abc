@@ -6222,33 +6222,7 @@ components:
           type: string
           format: date
           description: The next date when unused vacation days will expire.
-    ListAbsenceTypesResponse:
-      type: object
-      properties:
-        absenceTypes:
-          type: array
-          items:
-            $ref: '#/components/schemas/AbsenceType'
-    ListAbsencesAccumulatedResponse:
-      type: object
-      additionalProperties:
-        type: array
-        description: Personnel numbers or user IDs of the requested persons.
-        items:
-          $ref: '#/components/schemas/AccumulatedAbsencesDateIntervalData'
-    ListAbsencesResponse:
-      type: object
-      additionalProperties:
-        type: array
-        items:
-          $ref: '#/components/schemas/AbsencesDateIntervalData'
-    ListCostCentersResponse:
-      type: object
-      properties:
-        costCenters:
-          type: array
-          items:
-            $ref: '#/components/schemas/CostCenter'
+
     ListCostObjectivesResponse:
       type: object
       properties:
