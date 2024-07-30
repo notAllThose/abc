@@ -15,6 +15,11 @@ jobs:
 
     - name: Echo current directory
       run: |
+       cd ..
+        echo: pwd
+
+    - name: Echo current directory
+      run: |
         echo "Current directory:"
         pwd
 
