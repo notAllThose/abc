@@ -13,6 +13,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Echo current directory
+      run: |
+        echo "Current directory:"
+        pwd
+
+    - name: List current directory contents
+      run: |
+        echo "Directory contents:"
+        ls -la
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -25,7 +35,7 @@ jobs:
 
     - name: Run sorting script
       run: |
-        python ../sortYaml/sort_openapi.py
+        python sort_openapi.py
 
     - name: Commit sorted YAML file
       run: |
