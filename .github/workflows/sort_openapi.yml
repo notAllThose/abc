@@ -13,11 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Echo current directory
-      run: |
-        cd ..
-        echo "1Changed directory to root:"
-        ls 
+
 
 
     - name: Echo current directory
@@ -42,7 +38,7 @@ jobs:
 
     - name: Run sorting script
       run: |
-        python sort_openapi.py
+        python sortYaml.py
 
     - name: Commit sorted YAML file
       run: |
