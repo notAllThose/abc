@@ -17,19 +17,7 @@ jobs:
       run: |
         cd ..
         echo "1Changed directory to root:"
-        pwd
-        echo "1Root directory contents after cd ..:"
-        ls -la
-        cd ..
-        echo "2Changed directory to root:"
-        pwd
-        echo "2Root directory contents after cd ..:"
-        ls -la
-        cd ..
-        echo "3Changed directory to root:"
-        pwd
-        echo "3Root directory contents after cd ..:"
-        ls -la
+        ls 
 
 
     - name: Echo current directory
