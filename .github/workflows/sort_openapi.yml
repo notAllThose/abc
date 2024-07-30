@@ -25,7 +25,7 @@ jobs:
 
     - name: Run sorting script
       run: |
-        python ./sortYaml/sort_openapi.py
+        python ../sortYaml/sort_openapi.py
 
     - name: Commit sorted YAML file
       run: |
